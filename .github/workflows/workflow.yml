@@ -36,5 +36,10 @@ jobs:
           CI=false && yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_KEY: ${{ secrets.VITE_KEY }} 
+          VITE_NEW_KEY1: ${{ secrets.VITE_NEW_KEY1 }} 
+          VITE_NEW_KEY2: ${{ secrets.VITE_NEW_KEY2 }} 
+          VITE_NEW_KEY3: ${{ secrets.VITE_NEW_KEY3 }} 
+
 
 
