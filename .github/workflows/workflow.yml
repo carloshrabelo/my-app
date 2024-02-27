@@ -40,6 +40,3 @@ jobs:
           VITE_NEW_KEY1: ${{ secrets.VITE_NEW_KEY1 }} 
           VITE_NEW_KEY2: ${{ secrets.VITE_NEW_KEY2 }} 
           VITE_NEW_KEY3: ${{ secrets.VITE_NEW_KEY3 }} 
-
-
-
