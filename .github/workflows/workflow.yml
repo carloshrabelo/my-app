@@ -32,9 +32,6 @@ jobs:
       - name: Deploy
         run: |
           touch .env
-          echo NODE_ENV=production >> .env
-          echo PUBLIC_URL=${{secrets.PUBLIC_URL}} >> .env
-          echo REACT_APP_API_TV=${{secrets.REACT_APP_API_TV}} >> .env
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           CI=false && yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
