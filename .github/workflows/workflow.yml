@@ -31,7 +31,6 @@ jobs:
           yarn --prefer-offline
       - name: Deploy
         run: |
-          touch .env
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           CI=false && yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
