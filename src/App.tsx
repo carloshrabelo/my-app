@@ -3,6 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const MODE = import.meta.env.MODE;
+const KEY = import.meta.env.VITE_KEY;
+const NEW_KEY1 = import.meta.env.VITE_NEW_KEY1;
+const NEW_KEY2 = import.meta.env.VITE_NEW_KEY2;
+const NEW_KEY3 = import.meta.env.VITE_NEW_KEY3;
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +27,13 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <ul>
+          <li>MODE={MODE}</li>
+          <li>KEY={KEY}</li>
+          <li>NEW_KEY1={NEW_KEY1}</li>
+          <li>NEW_KEY2={NEW_KEY2}</li>
+          <li>NEW_KEY3={NEW_KEY3}</li>
+        </ul>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
