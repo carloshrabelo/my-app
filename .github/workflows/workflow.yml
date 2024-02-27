@@ -35,7 +35,7 @@ jobs:
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           CI=false && yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ vars.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VITE_KEY: ${{ vars.VITE_KEY }} 
           VITE_NEW_KEY1: ${{ vars.VITE_NEW_KEY1 }} 
           VITE_NEW_KEY2: ${{ vars.VITE_NEW_KEY2 }} 
